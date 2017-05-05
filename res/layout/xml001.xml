@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_map_back"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+      	android:gravity="center"
+        android:text="返 回 地 图" />
+
+    <TextView
+        android:id="@+id/textView001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:text="南京纪念馆" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgbt_call"
+        android:layout_alignLeft="@+id/textView001"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="电话  ："
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_toRightOf="@+id/phone"
+        android:textColor="#000000"
+        android:text="18805160226"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imgbt_call"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView001"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="23dp"
+        android:background="#eeeeee"
+        android:src="@drawable/call" />
+    <TextView
+        android:id="@+id/my_addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_route"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/button_map_back"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:text="到这里去" />
+
+
+
+    
+
+    <TextView
+        android:id="@+id/adr_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="26dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="地址 ："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/adr_name"
+        android:layout_alignBottom="@+id/adr_name"
+        android:layout_alignLeft="@+id/phone_num"
+        android:textColor="#000000"
+        android:hint="纪念馆地址"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/profle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adr_name"
+        android:layout_below="@+id/adr_name"
+        android:layout_marginTop="31dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="简 介 ："
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/profle"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="这个纪念馆位于江苏省南京市，"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:textColor="#000000"
+        android:text="每天来此参观的人们络绎不绝。"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView1"
+        android:textColor="#000000"
+        android:text="承担了文化传承、爱国主义教育的功能，" />
+
+
+</RelativeLayout>

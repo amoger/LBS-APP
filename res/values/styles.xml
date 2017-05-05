@@ -1,0 +1,17 @@
+<resources>  
+  
+   <style name="WindowTitleBackground" >     
+    </style>  
+     <style name="AppBaseTheme" parent="android:Theme.Light">
+      </style>
+    
+    <style name="MyTheme" parent="android:Theme">  
+        <item name="android:windowTitleSize">60dp</item>  
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>    
+    </style>  
+    
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+  
+</resources>  

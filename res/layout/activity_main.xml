@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        
+    
+      //侧滑
+    <com.imooc.slidingmenu.view.SlidingMenu 
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+            <include layout="@layout/left_menu"/>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <Button 
+                    android:onClick="toggleMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切换菜单"  />
+            </LinearLayout>
+         </LinearLayout>        
+    </com.imooc.slidingmenu.view.SlidingMenu>
+  
+    
+    
+    //百度地图
+    <com.baidu.mapapi.map.MapView  
+    android:id="@+id/bmapView"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:clickable="true" />
+
+    
+    //彩票点小图标，及相关介绍图片
+	<RelativeLayout
+    android:id="@+id/id_marker_ly"				
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:background="#cc4e5a6b"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone"
+    android:layout_height="220dp" >
+    
+    <ImageView 
+        android:id="@+id/id_info_img"
+        android:src="@drawable/_001"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" 
+        android:background="@drawable/img_border"
+        android:scaleType="fitXY"       
+        />
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_map_bottom" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国福利彩票"
+                android:textColor="#fff5eb" />
+
+            <TextView
+                android:id="@+id/id_info_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="直线距离200米"
+                android:textColor="#fff5eb" />
+        </LinearLayout>
+
+         <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >        
+
+        <Button
+            android:id="@+id/button_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text=" 详 情 >> " />        
+            
+            <TextView
+        android:id="@+id/phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="电话号码" />
+                    
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>
+    
+</RelativeLayout>
